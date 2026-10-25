@@ -1,0 +1,6 @@
+# Generated invoices are data, not code (the empty folder is kept with .gitkeep)
+invoice/*.json
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

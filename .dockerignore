@@ -1,0 +1,8 @@
+.git
+invoice/
+k8s/
+lambda/
+aws/
+__pycache__/
+*.pyc
+.venv/

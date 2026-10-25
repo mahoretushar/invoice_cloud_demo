@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadInvoices",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/invoice/*"
+    },
+    {
+      "Sid": "WriteSummaries",
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/processed/*"
+    },
+    {
+      "Sid": "SendEmailNotification",
+      "Effect": "Allow",
+      "Action": "sns:Publish",
+      "Resource": "arn:aws:sns:ap-south-1:YOUR-ACCOUNT-ID:invoice-alerts"
+    }
+  ]
+}

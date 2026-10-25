@@ -1,0 +1,10 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": { "name": "YOUR-BUCKET-NAME" },
+        "object": { "key": "invoice/INV-20261025-143205-7F3A.json" }
+      }
+    }
+  ]
+}
