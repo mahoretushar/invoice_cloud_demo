@@ -18,4 +18,5 @@ ENV INVOICE_DIR=/app/invoice
 EXPOSE 5000
 
 # gunicorn is a production web server for Flask apps
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "app:app"]
+# --access-logfile - prints one log line per request (visible in docker logs / kubectl logs)
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--access-logfile", "-", "app:app"]
